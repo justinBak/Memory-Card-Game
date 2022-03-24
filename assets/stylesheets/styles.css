@@ -28,9 +28,15 @@ body {
 	margin-top: 50px;
 	top: 0;
 	width: 100%;
+	height: 150px;
 	text-align: center;
 	margin-bottom: 50px;
 	background-color: white;
+}
+
+.logo {
+	position: relative;
+	top: 10px;
 }
 
 h2 {
@@ -50,7 +56,7 @@ h2 {
 	border-radius: 10px;
 	background: white;
 	backface-visibility: hidden;
-	border: solid 5px rgb(56,96,170);
+	border: solid 5px rgb(56, 96, 170);
 }
 
 .front-face {
@@ -70,7 +76,6 @@ h2 {
 	perspective: 1000px;
 	position: absolute;
 	top: 300px;
-	
 }
 
 .memory-card {
