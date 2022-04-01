@@ -9,69 +9,75 @@
     <link rel="stylesheet" href="/assets/stylesheets/styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="background-image"></div>
+        
+        <div class="header">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+            <h2>Card Guessing Game</h2>
+            <button class="btn">Reset</button>
+        </div>
 
-    <div class="image-container">
-        <img class="image-container-image" src="https://wallpaperaccess.com/full/8611.jpg" alt="">
-    </div>
-    <div class="header">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-        <h2>Card Guessing Game</h2>
-    </div>
-    <div class="container-pos">
-        <section class="memory-game">
-            <div class="memory-card" data-framework="bulba">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulba">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="char">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="char">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
+        <div class="main-content">
+            <section class="memory-game">
+                <div class="memory-card" data-card="bulba">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulba">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="char">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="char">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
 
-            <div class="memory-card" data-framework="squirtle">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="squirtle">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="mew">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" alt="mew">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
+                <div class="memory-card" data-card="squirtle">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="squirtle">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="mew">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" alt="mew">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
 
-            <div class="memory-card" data-framework="sheep">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png" alt="sheep">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="pika">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pika">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="sheep">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png" alt="sheep">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="pika">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pika">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
+                <div class="memory-card" data-card="sheep">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png" alt="sheep">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="pika">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pika">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="sheep">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png" alt="sheep">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="pika">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pika">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
 
-            <div class="memory-card" data-framework="bulba">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulba">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="char">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="char">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
+                <div class="memory-card" data-card="bulba">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulba">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="char">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="char">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
 
-            <div class="memory-card" data-framework="squirtle">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="squirtle">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-            <div class="memory-card" data-framework="mew">
-                <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" alt="mew">
-                <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
-            </div>
-        </section>
+                <div class="memory-card" data-card="squirtle">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="squirtle">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+                <div class="memory-card" data-card="mew">
+                    <img class= "front-face" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" alt="mew">
+                    <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="">
+        </div>
     </div>
 
     <script src="/assets/javascript/game.js"></script>

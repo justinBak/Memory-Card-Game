@@ -1,3 +1,5 @@
+
+/* Affects every element*/
 * {
 	padding: 0;
 	margin: 0;
@@ -7,21 +9,30 @@
 body {
 	margin-top: 100px;
 	height: 100vh;
-	background-image: ;
 }
 
-.image-container {
+/* Sets the background-image and maintains the images resolution while resizing the viewport */
+.background-image {
+	background: url("https://wallpaperaccess.com/full/8611.jpg");
+	background-repeat: no-repeat;
+	background-size: 3430px 1440px;
+	display: flex;
+	width: 3440px;
+	height: 1440px;
+	position: relative;
+	justify-content: center;
+	
+}
+
+/* Moves all the content down on the viewport 100px  */
+.container {
 	position: relative;
 	bottom: 100px;
-	width: 100%;
 }
 
-.image-container-image {
-	width: 100%;
-	z-index: 0;
-	height: 1100px;
-}
+/* <---- header ----> */
 
+/* Sets the header container to a block element to allow inner content positioning */
 .header {
 	display: block;
 	position: absolute;
@@ -47,55 +58,103 @@ h2 {
 	background-color: white;
 }
 
-.front-face,
-.back-face {
-	width: 100%;
-	height: 100%;
-	padding: 0px;
-	position: absolute;
-	border-radius: 10px;
-	background: white;
-	backface-visibility: hidden;
-	border: solid 5px rgb(56, 96, 170);
+.btn {
+	border: solid 5px black;
+	padding: 5px 15px;
+	margin-top: 25px;
+	font-family: 'Permanent Marker', cursive;
+	color: rgb(255, 203, 3);
+	background-color: rgb(56, 96, 170);
+	font-size: 16px;
 }
 
-.front-face {
-	transform: rotateY(180deg);
-}
+/* <---- main content ----> */
 
-.container-pos {
+/* Use flexbox to horizontally center the child element memory-game */
+.main-content {
 	display: flex;
 	justify-content: center;
 }
 
+/* Shrinks the width of the items to fit memory-game container */
 .memory-game {
 	width: 600px;
 	height: 200px;
+	margin: 0 100px;
 	display: flex;
+/* Each item wraps along multiple lines according to their size which is defined by width and height */
 	flex-wrap: wrap;
+/* Produces the 3D flip effect. Sets how far in the z-plane the cards are from the user. Lower values produce a greater perspective effect */
 	perspective: 1000px;
 	position: absolute;
 	top: 300px;
 }
 
+/* Styling and animations for each card */
 .memory-card {
-	width: calc(25% - 10px);
-	height: calc(100% - 10px);
+	width: calc(25% - 10px); /*<--- sets the number of columns */
+	height: calc(100% - 10px); /*<--- sets the number rows */
 	margin: 5px;
 	position: relative;
-	box-shadow: 10px 5px 10px rgba (0, 150, 255, .8);
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, .4);
 	transform: scale(1);
+/* Renders the cards in 3D space in their parent element. */
 	transform-style: preserve-3d;
-	transition: transform .5s;
+/* Creates a card flipping effect */
+	transition: transform .4s;
 	background-color: white;
 	border-radius: 10px;
 }
 
+.memory-card:hover {
+	cursor: pointer;
+}
+
+/* Click response */
 .memory-card:active {
 	transform: scale(.97);
 	transition: transform .2s;
 }
 
+/* Tells javaScript to flip the cards on their Y-axis */
 .memory-card.flip {
 	transform: rotateY(180deg);
+}
+
+/* Rotates the front-face card again to reveal the back-face cards front face */
+.front-face {
+	transform: rotateY(180deg);
+}
+
+/* Affects the styling and positioning of each card */
+.front-face,
+.back-face {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+/* Stacks the cards on top of one anther */
+	position: absolute;
+	border-radius: 10px;
+	background: white;
+/* Hides the backs of each card */
+	backface-visibility: hidden;
+	border: solid 5px rgb(56, 96, 170);
+}
+
+/* <---- footer ----> */
+
+.footer{
+	display: block;
+	position: absolute;
+	bottom: 200px;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.footer-logo {
+	position: relative;
+	top: 25px;
 }
