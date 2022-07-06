@@ -32,7 +32,7 @@ function checkForMatch(){
     isMatch ? disableCards() : unflipCards(); // <--- Executes if the condition returns true
 }
 
-//Disables cards after a match
+// Disables cards after a card match
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -69,7 +69,6 @@ function resetGame (){
     cards.forEach((card) => card.classList.remove('flip'));
     shuffle();
     resetBoard();
-    // alert('It Works!');
 }
 
 function timer(){
