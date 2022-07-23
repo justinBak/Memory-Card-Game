@@ -54,15 +54,16 @@ h2 {
 /* <---- main content ----> */
 
 .main-content {
-	margin: 0 9.5vw;
+	margin: 0 auto;
 	width: 50%;
+	display: flex;
+	justify-content: center;
 }
 
 /* Shrinks the width of the items to fit memory-game container */
 .memory-game {
-	justify-content: center;
-	height: 30vw;
-	width: 80vw;
+	height: 300px;
+	width: 800px;
 	display: flex;
 /* Each item wraps along multiple lines according to their size which is defined by width and height */
 	flex-wrap: wrap;
